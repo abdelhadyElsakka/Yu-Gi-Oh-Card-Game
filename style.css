@@ -176,6 +176,9 @@ a{
           text-align: center;
       }
       
+      .card:hover{
+        transform: translateY(0) scale(1);
+      }
       
       a{
           font-size: 2rem;
