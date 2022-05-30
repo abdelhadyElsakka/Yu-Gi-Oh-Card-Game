@@ -28,7 +28,7 @@ body {
 a{
     color: #F90716;
     text-decoration: none;
-    font-size: 4rem;
+    font-size: 300%;
     text-transform: uppercase;
 }
 
@@ -61,9 +61,9 @@ a{
     align-items: center;
     justify-content: center;
     text-align: center;
-    width: 90%;
+    width: 80%;
     height: auto;
-    margin-left: 8rem;
+    margin-left: 7%;
 }
 
 .card {
@@ -74,6 +74,8 @@ a{
     position: relative;
     transition: all .4s ease;
 }
+
+
 
 .card:hover{
     transform: translateY(-3rem) scale(1.01);
@@ -90,6 +92,11 @@ a{
     border-radius: 1rem;
     overflow: hidden;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+}
+
+.card__picture {
+    background-size: cover;
+    height: 16rem;
 }
 
 .card__side--front {
@@ -126,10 +133,7 @@ a{
 }
 
 
-.card__picture {
-    background-size: cover;
-    height: 16rem;
-}
+
 
 
 .card__picture--1 {
@@ -172,13 +176,9 @@ a{
           padding: 2rem;
           background-size:auto;
           background-repeat: no-repeat;
-          background-image: url(img/background-mobile.png);
           text-align: center;
       }
       
-      .card:hover{
-        transform: translateY(0) scale(1);
-      }
       
       a{
           font-size: 2rem;
@@ -207,12 +207,12 @@ a{
       
       .header-img{
           margin: 0;
-          width: 90%;
+          width: 40%;
       }
       
       .cards {
           width: 100%;
-          margin: -2.8rem;
+          margin: 0 -2.8rem;
       }
       
       .card {
