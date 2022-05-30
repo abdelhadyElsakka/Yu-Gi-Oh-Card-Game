@@ -219,6 +219,10 @@ a{
           margin: 5rem 4rem;
           border-radius: .5rem;
       }
+  
+      .card:hover{
+        transform: translateY(0) scale(1);
+      }
       
       
       .card__side {
