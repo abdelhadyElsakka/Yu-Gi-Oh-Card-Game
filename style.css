@@ -233,6 +233,15 @@ a{
           width: 6rem;
           border-radius: .5rem;
       }
+  
+    .card:hover .card__side--front {
+        transform: rotateY(-180deg);   
+    }   
+
+
+    .card:hover .card__side--back {
+        transform: rotateY(0);
+    }
       
       .card__picture {
           height: 8.7rem;
