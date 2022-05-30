@@ -37,6 +37,8 @@ a{
     justify-content: space-between;
     align-items: center;
     text-align: center;
+    width: 80%;
+    margin: auto;
 }
 
 .header{
@@ -63,7 +65,7 @@ a{
     text-align: center;
     width: 80%;
     height: auto;
-    margin-left: 7%;
+    margin-left: 6.5%;
 }
 
 .card {
