@@ -26,7 +26,7 @@ var userClickedCardsIds = [];
 
 
 for (var i=0;i<numOfCards;i++){
-  document.getElementsByClassName("card")[i].addEventListener("click",function respond(){
+  document.getElementsByClassName("card")[i].addEventListener("click",function(){
     var img = this.lastElementChild.firstElementChild
     style = img.currentStyle || window.getComputedStyle(img, false),
     bi = style.backgroundImage.slice(4, -1).replace(/"/g, "");
@@ -42,8 +42,6 @@ for (var i=0;i<numOfCards;i++){
         matchedSound.play();
         document.getElementById(`${userClickedCardsIds[0]}`).classList.add("done");
         document.getElementById(`${userClickedCardsIds[1]}`).classList.add("done");
-        document.getElementById(`${userClickedCardsIds[0]}`).removeEventListener('click',respond);
-        document.getElementById(`${userClickedCardsIds[1]}`).removeEventListener('click',respond);
         userClickedCardsIds=[];
         userClickedCards=[];
         flag--;
@@ -80,9 +78,6 @@ for (var i=0;i<numOfCards;i++){
 
 
 document.getElementById('new_game').addEventListener('click',function(){
-  for (var i=0;i<numOfCards;i++){
-  document.getElementsByClassName("card")[i].addEventListener("click",respond)
-  }
   var newGameSound = new Audio('sounds/newgame.wav');
   newGameSound.play();
   cardsOrder = shuffle(cardsOrder);
