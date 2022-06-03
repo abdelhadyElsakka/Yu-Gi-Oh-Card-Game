@@ -80,6 +80,9 @@ for (var i=0;i<numOfCards;i++){
 
 
 document.getElementById('new_game').addEventListener('click',function(){
+  for (var i=0;i<numOfCards;i++){
+  document.getElementsByClassName("card")[i].addEventListener("click",respond)
+  }
   var newGameSound = new Audio('sounds/newgame.wav');
   newGameSound.play();
   cardsOrder = shuffle(cardsOrder);
