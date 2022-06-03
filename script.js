@@ -26,7 +26,7 @@ var userClickedCardsIds = [];
 
 
 for (var i=0;i<numOfCards;i++){
-  document.getElementsByClassName("card")[i].addEventListener("click",function(){
+  document.getElementsByClassName("card")[i].addEventListener("click",function respond(){
     var img = this.lastElementChild.firstElementChild
     style = img.currentStyle || window.getComputedStyle(img, false),
     bi = style.backgroundImage.slice(4, -1).replace(/"/g, "");
