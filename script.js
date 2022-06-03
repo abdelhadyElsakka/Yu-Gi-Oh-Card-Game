@@ -40,6 +40,8 @@ for (var i=0;i<numOfCards;i++){
         matchedSound.play();
         document.getElementById(`${userClickedCardsIds[0]}`).classList.add("done");
         document.getElementById(`${userClickedCardsIds[1]}`).classList.add("done");
+        document.getElementById(`${userClickedCardsIds[0]}`).removeEventListener('click',respond);
+        document.getElementById(`${userClickedCardsIds[1]}`).removeEventListener('click',respond);
         userClickedCardsIds=[];
         userClickedCards=[];
         flag--;
