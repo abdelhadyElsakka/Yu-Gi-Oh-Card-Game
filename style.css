@@ -64,9 +64,8 @@ a{
     justify-content: center;
     text-align: center;
     height: auto;
-    margin-left: 6.5%;
+    margin-left: 1.5%;
     width: 90%;
-    padding: 0 6%;
 }
 
 .card {
@@ -217,7 +216,6 @@ a{
       .cards {
           width: 100%;
           margin: 0 -2.8rem;
-          padding-bottom: 2%;
       }
       
       .card {
