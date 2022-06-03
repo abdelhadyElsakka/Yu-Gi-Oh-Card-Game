@@ -128,10 +128,12 @@ a{
 
 .done .card__side--front{
     transform: rotateY(-180deg); 
+    pointer-events: none;
 }
 
 .done .card__side--back {
     transform: rotateY(0);
+    pointer-events: none;
 }
 
 
